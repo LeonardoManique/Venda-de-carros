@@ -1,2 +1,27 @@
 @import 'navbar.css';
 @import 'global.css';
+
+.hero-section {
+    width: 100%;
+    height: calc(100vh - 7.5em);
+    background-image: url(../media/background.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .logo {
+    height: 15em;
+    display: block;
+    margin: auto;
+}
+
+.hero-section .sub-heading {
+    margin-top: 0.8em;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Lobster', cursive;
+    color: var(--color-principal2);
+    font-weight: 300;
+}           

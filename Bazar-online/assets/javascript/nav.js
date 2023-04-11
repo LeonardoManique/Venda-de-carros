@@ -3,7 +3,7 @@ const createNav = () => {
 
     nav.innerHTML = `
         <div class="nav">
-            <img src="assets/media/logo.png" class="logo" alt="Brechó">
+            <img src="assets/media/logo.png" class="logo-navbar" alt="Brechó">
             <div class="nav-items">
                 <div class="search">
                     <input type="text" class="search-box" placeholder="Procure aqui o produto">
