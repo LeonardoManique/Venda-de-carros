@@ -19,7 +19,7 @@ const createNav = () => {
             <li class="link-item"><a href="#" class="link"> Acessórios </a></li>
             <li class="link-item"><a href="#" class="link"> Contato </a></li>
         </ul>
-  `;
+    `;
 
 }
 
