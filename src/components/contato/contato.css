@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@300;400;500;600;700;800&family=Shadows+Into+Light&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@300;400;500;600;700;800&family=Shadows+Into+Light&display=swap");
+@import url("../../global.css");
 
 /* font-family: 'Caveat', cursive;
 font-family: 'Poppins', sans-serif;
@@ -17,7 +18,7 @@ font-family: 'Shadows Into Light', cursive;
   box-sizing: border-box;
 }
 :root {
-  --color-primary: #FFFFCC;
+  --color-primary: #ffffcc;
   --color-sucess: #00bf8e;
   --color-warning: #f7c94b;
   --color-danger: #f75842;
@@ -25,8 +26,8 @@ font-family: 'Shadows Into Light', cursive;
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.7);
   --color-black: #000;
-  --color-bg: #FFFFCC;
-  --color-bg1: #EA4C89;
+  --color-bg: #ffffcc;
+  --color-bg1: #ea4c89;
   --color-bg2: #643733;
 
   --container-width-lg: 80%;
@@ -37,7 +38,7 @@ font-family: 'Shadows Into Light', cursive;
 }
 
 body {
-  font-family:"Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.7;
   color: var(--color-white);
   background: var(--color-bg);
@@ -48,7 +49,11 @@ body {
   margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   line-height: 1.2;
 }
 
@@ -99,74 +104,6 @@ img {
   color: var(--color-white);
 }
 
-/* Navbar */
-
-.menu i {
-  display: none;
-}
-
-.navbar {
-  background-color: var(--color-white);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: var(--color-bg1);
-}
-
-.nav-links {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-}
-
-.nav-links li {
-  margin-right: 15px;
-}
-
-.nav-links li a {
-  color: var(--color-bg1);
-  transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-  color: var(--color-primary);
-}
-
-.cart {
-  position: relative;
-}
-
-.cart img {
-  width: 25px;
-  height: 25px;
-}
-
-.cart-count {
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  background-color: var(--color-bg);
-  color: var(--color-white);
-  font-size: 12px;
-  font-weight: bold;
-  padding: 5px;
-  border-radius: 50%;
-}
-
-.container {
-  max-width: 450px;
-  margin: 400px 800px 0 100px;
-  padding: 20px;
-  background-color: var(--color-bg2);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 /* Atendimento */
 
 .teiner {
@@ -207,36 +144,33 @@ i.fas {
   font-size: 24px;
 }
 
-main img{
+main img {
   height: 20px;
   width: 20px;
-
 }
 
-main h2{
+main h2 {
   font-size: 30px;
-
 }
 
-main p{
+main p {
   font-size: 15px;
 }
 
-main{
+main {
   background-color: none;
   color: var(--color-bg1);
 }
 
-.title{
+.title {
   background: var(--color-bg2);
   height: 150px;
   text-align: center;
   margin-top: 100px;
   color: var(--color-bg1);
-
 }
 
-.hr1{
+.hr1 {
   height: 2px;
   width: 1300px;
   background-color: #000;
@@ -258,14 +192,13 @@ main{
   color: var(--color-bg1);
 }
 
-.conosco1{
+.conosco1 {
   margin-left: 380px;
   margin-top: 25px;
   color: var(--color-bg1);
-  
 }
 
-.hr2{
+.hr2 {
   height: 2px;
   width: 1300px;
   background-color: #000;
@@ -274,22 +207,21 @@ main{
   color: var(--color-bg1);
 }
 
-.conosco1{
+.conosco1 {
   margin-left: 380px;
   margin-top: 25px;
-  
 }
 
-footer{
+footer {
   height: 100px;
   width: 100%;
   background-color: var(--color-white);
   color: var(--color-bg1);
-  font-size: 30PX;
+  font-size: 30px;
   padding-bottom: 20px;
 }
 
-footer img{
+footer img {
   height: 80px;
   width: 180px;
   margin-left: 800px;
@@ -297,11 +229,10 @@ footer img{
   padding-top: 20px;
   float: left;
 }
-footer p{
+footer p {
   font-size: 10px;
   margin-top: 63px;
   color: var(--color-black);
   display: inline-block;
   text-align: center;
 }
-

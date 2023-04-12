@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Lobster&family=Poppins:wght@300;400;500;600;700;800&family=Shadows+Into+Light&display=swap");
+
+/* font-family: 'Caveat', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Lobster', cursive;
+*/
+
+/* https://cssgradient.io/gradient-backgrounds/ */
+
+/* icones : https://iconscout.com/unicons/explore/line */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+:root {
+  --color-sucess: #00bf8e;
+  --color-danger: #f75842;
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-principal: #ffffcc;
+  --color-principal1: #ea4c89;
+  --color-principal2: #643733;
+
+  --transition: all 400ms ease;
+}
+
+body {
+  line-height: 1.7;
+  color: var(--color-principal1);
+  background: var(--color-principal);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+a {
+  color: var(--color-principal1);
+}
+
+/*  INDEX HTML  */
+
+.hero-section {
+  width: 100%;
+  height: calc(100vh - 7.5em);
+  background-image: url(./assets/background.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .logo {
+  height: 15em;
+  display: block;
+  margin: auto;
+}
+
+.hero-section .sub-heading {
+  margin-top: 0.8em;
+  text-align: center;
+  font-size: 2.2em;
+  font-family: "Lobster", cursive;
+  color: var(--color-principal2);
+}
+
+/* Product */
+
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.product-category {
+  padding: 0 10vw;
+  font-size: 3em;
+  font-weight: 500;
+  margin-bottom: 3em;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 15.6em;
+  height: 28em;
+  margin-right: 3em;
+  border: 5px solid var(--color-principal2); /* esse border é pra teste mas caso goste eu posso editar melhor */
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 22em;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 22em;
+  object-fit: cover;
+}
+
+.discount-tag {
+  position: absolute;
+  background-color: var(--color-principal2);
+  padding: 0.5em;
+  border-radius: 0.5em;
+  color: var(--color-principal1);
+  right: 0.9em;
+  top: 0.9em;
+}
+
+/*NAVBAR CSS*/
+
+.navbar {
+  position: sticky !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  z-index: 9 !important;
+  background: var(--color-white) !important;
+}
+
+.nav {
+  padding: 10px 10vw !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.logo-navbar {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.nav-items {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.search {
+  width: 500px !important;
+  display: flex !important;
+}
+
+.search-box {
+  width: 80% !important;
+  height: 40px !important;
+  padding: 10px !important;
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  border: 1px solid var(--color-principal1) !important;
+  background: none !important;
+  color: var(--color-principal1) !important;
+}
+
+.search-btn {
+  width: 20% !important;
+  height: 40px !important;
+  padding: 10px 20px !important;
+  border: none !important;
+  cursor: pointer !important;
+  background-color: var(--color-principal2) !important;
+  color: var(--color-principal1) !important;
+  font-size: 1em !important;
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  line-height: 1em !important;
+}
+
+.search-box::placeholder {
+  color: var(--color-principal1) !important;
+}
+
+/* é o tamanho do icone carrinho e usuário, o tamanho deles é decidido pelo font-size */
+a i {
+  font-size: 2.5em;
+}
+
+.nav-items a {
+  margin-left: 2em;
+}
+
+.links-container {
+  width: 100%;
+  display: flex;
+  padding: 10px 10vw;
+  justify-content: center;
+  border-top: 1px solid var(--color-principal1);
+}
+
+.link {
+  text-transform: uppercase;
+  padding: 0 10px;
+  margin: 0 5px;
+  color: var(--color-principal1);
+  opacity: 0.5;
+  transition: var(--transition);
+}
+
+.link:hover {
+  opacity: 1;
+}
