@@ -181,12 +181,15 @@ img {
 
 .box {
   flex: 1;
-  border: 2px solid black;
+  border: 2px solid #a0305b;
   padding: 10px;
   margin-right: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--color-bg1);
+  color: var(--color-bg) ;
+  border-radius: 10px;
 }
 
 .box:last-child {
